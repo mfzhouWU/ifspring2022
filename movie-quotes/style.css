@@ -1,0 +1,72 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    background-color:rgb(29, 29, 29);
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+
+h2 { 
+    font-size: 40px;
+    margin-left: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+img {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.quote {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    line-height: 0.85em;
+    color: gainsboro;
+}
+
+#first {
+    margin-top: 0;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.action {
+    font-style: italic;
+}
+
+.peter {
+    color:cornflowerblue;
+}
+
+.dana {
+    color: orange;
+}
+
+.ray {
+    color: tomato;
+}
+
+.mayor {
+    color:yellowgreen;
+}
+
+.egon {
+    color:gold;
+}
+
+.winston {
+    color:hotpink;
+}
