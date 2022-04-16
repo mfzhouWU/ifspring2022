@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 50%;
+    height: 100vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} 
+
+.half {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ol, #title ul {
+    padding: 0 20%;
+}
+
+/* title section css */
+#title h1 {
+    font-size: 70px;    
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.2em; 
+}
+
+#title h2 {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* list section css */
+#lists {
+    background-color: rgb(15 125 129);
+    color: white;
+}
+
+#lists .half {
+    flex-direction: column;
+}
+
+#lists h2 {
+    font-size: 40px;
+    margin: 0 0 2% 0;
+}
+
+#lists h3 {
+    margin: 0;
+}
+
+#lists ul {
+    padding: 0 20%;
+    list-style-type: disc;
+}
+
+#lists p {
+    padding: 0 18%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.list_title {
+    list-style-type: none;
+    margin: 5% 0 1% 0;
+    font-size: 18px;
+    font-weight: bold;
+} 
+
+/* step section css */
+.photo_grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.photo_grid li {
+    width: 50%;
+    height: 50vh;
+}
+
+.photo_grid img {
+    width: 100%;
+    height: 50vh;
+}
+
+@media (max-width: 1100px) {
+    body {
+        font-size: 14px;
+    }
+
+    #title h1 {
+        font-size: 60px;   
+    }
+    
+    #title h2 {
+        font-size: 16px;
+    }
+
+    section, img {
+        height: 90vh;
+    }
+
+    .photo_grid li, .photo_grid img {
+        height: 45vh;
+    }
+}
+
+@media (max-width: 850px) {
+    body, #lists h3 {
+        font-size: 13px;
+    }
+
+    #title h1 {
+        font-size: 50px;   
+    }
+    
+    #title h2 {
+        font-size: 14px;
+    }
+
+    #lists h2 {
+        font-size: 35px;
+    }
+    
+    #lists p {
+        font-size: 11px;
+    }
+    
+    .list_title {
+        font-size: 16px;
+    }
+
+    section, img {
+        height: 70vh;
+    }
+
+    .photo_grid li, .photo_grid img {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 650px) {
+    body, #lists h3 {
+        font-size: 10px;
+    }
+
+    #title h1 {
+        font-size: 40px;   
+    }
+    
+    #title h2 {
+        font-size: 12px;
+    }
+
+    #lists h2 {
+        font-size: 30px;
+    }
+    
+    #lists p {
+        font-size: 9px;
+    }
+    
+    .list_title {
+        font-size: 13px;
+    }
+
+    section, img {
+        height: 50vh;
+    }
+
+    #lists {
+        height: 60vh;
+    }
+
+    .photo_grid li, .photo_grid img {
+        height: 25vh;
+    }
+}
+
+@media (max-width: 545px) {
+    body {
+        font-size: 9px;
+    }
+
+    #title h1 {
+        font-size: 30px;   
+    }
+    
+    #title h2 {
+        font-size: 10px;
+    }
+
+    #lists h2 {
+        font-size: 25px;
+    }
+    
+    #lists p {
+        font-size: 8px;
+    }
+    
+    .list_title {
+        font-size: 11px;
+    }
+
+    section, img {
+        height: 40vh;
+    }
+
+    .photo_grid li, .photo_grid img {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 445px) {
+    body {
+        font-size: 8px;
+    }
+
+    section, img {
+        height: 40vh;
+    }
+
+    .photo_grid li, .photo_grid img {
+        height: 20vh;
+    }
+}
+
+/* mobile version */
+@media (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+
+    ol {
+        padding: 20%;
+        margin: 0;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    section, #lists {
+        height: fit-content;
+    }
+
+    .half, .photo_grid {
+        width: 100%;
+    }
+
+    #title {
+        position: relative;
+    }
+
+    #title .half {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        text-align: center;
+        background-color: rgba(15, 125, 129, 0.8);
+        padding-bottom: 7%;
+    }
+
+    #title ul {
+        padding: 0 15%;
+    }
+
+    #title h1 {
+        font-size: 40px;   
+    }
+    
+    #title h2 {
+        font-size: 14px;
+    }
+
+    #timing .half {
+        padding: 50% 15%;
+    }
+
+    #timing li {
+        width: fit-content;
+        margin: 0;
+    }
+
+    #lists .half {
+        padding: 15% 0;
+    }
+
+    #steps2 .photo_grid {
+        order: -1;
+    }
+
+    .photo_grid li {
+        height: 25vh;
+    }
+    .photo_grid img {
+        height: 25vh;
+    }
+}
+
+@media (max-width: 275px) {
+    #title h1 {
+        font-size: 30px;    
+    }
+    
+    #title h2 {
+        font-size: 12px;
+    }
+
+    .photo_grid li {
+        height: 18vh;
+    }
+    .photo_grid img {
+        height: 18vh;
+    }
+}
