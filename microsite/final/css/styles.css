@@ -1,0 +1,249 @@
+/* main body */
+@font-face {
+    font-family: 'VL Gothic regular';
+    src: url('VL_Gothic_regular.ttf');
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    font-family: 'VL Gothic regular', 'Courier New', Courier;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page, footer {
+    background-color: black;
+    color: white;
+}
+
+/* nav bar */
+#wide_nav {
+    color: white;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+#wide_nav ul {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#wide_nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 1em 5vw;
+    text-decoration: none;
+}
+
+#wide_nav ul li a.selected, #dropdown_nav ul li a.selected {
+    font-weight: bold;
+}
+
+#wide_nav a:hover, footer a:hover {
+    font-style: italic;
+}
+
+#dropdown_nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+
+.menu {
+    position: relative;
+    transform: translateY(50%);
+    left: 1.5vh;
+}
+
+.dropdown_contents {				
+    max-height: 0;
+    overflow:hidden;
+    transition: all 1s;
+    list-style: none;
+    background-color: rgb(65, 65, 65);
+    padding: 0;
+    margin: 2.4vh 0 0 0;
+    font-size: 16px;	
+}
+
+.dropdown_contents li {
+    padding: 3% 10%;
+}
+
+.dropdown_contents li:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+.dropdown_contents li a {
+    color: white;
+    text-decoration: none;
+}
+
+#dropdown_nav.open .dropdown_contents {		
+    max-height: 50vh;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    padding: 1% 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#home, .page #wide_nav, .page footer, .page #dropdown_nav {
+    color: white;
+    background-color: #B54635;
+}
+
+/* home page */
+#home, .page section {
+    margin-top: 3em;
+}
+
+#home img {
+    width: 100%;
+}
+
+#gameplay img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 5% 0;
+}
+
+#home p {
+    width: 75%;
+    margin: auto;
+    padding: 5% 0;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+#plot, #gameplay {
+    padding: 3% 10%;
+}
+
+/* pages */
+.page h1 {
+    margin: 6% 0 2% 7%;
+}
+
+.page img {
+    width: 80%;
+    margin: 5% 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.information {
+    width: 55%;
+    margin: 0 5% 7% 7%;
+}
+
+.photos {
+    width: 35%;
+}
+
+/* media stuff */
+@media (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+
+    #wide_nav ul, #home p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #wide_nav ul, #home p {
+        font-size: 1rem;
+    }
+
+    #gameplay img {
+        width: 65%;
+    }
+
+    .page h1 {
+        margin: 9% 0 2% 0;
+        text-align: center;
+    }    
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .information {
+        width: 75%;
+        margin: 0;
+    }
+
+    .information p {
+        margin-bottom: 5%;
+    }
+    
+    .photos {
+        width: 90%;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 15px;
+    }
+
+    .page h1 {
+        padding: 0 8%;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 450px) {
+    #wide_nav {
+        display: none;
+    }
+
+    #dropdown_nav {
+        display: initial;
+    }
+
+    #home, .page section {
+        margin-top: 5vh;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+    }
+}
