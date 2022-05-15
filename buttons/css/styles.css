@@ -1,0 +1,266 @@
+/* coca cola button */
+a#btn_cola {
+    display: inline-block;
+    height: 77px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 90px;
+    padding: 15px 34px;
+    background-color: crimson;
+    transition: all .5s;
+}
+
+a#btn_cola img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a#btn_cola:hover {
+    background: linear-gradient(to bottom,  #f4e6c6 0%,#ad5220 40%,#752201 100%); 
+}
+
+/* nerf button */
+a#btn_nerf {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 75px;
+    border-radius: 100px / 50px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 90px;
+    padding: 12px 16px;
+    color: #f5f109;
+    background-color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_nerf:hover {
+    box-shadow: 2px 5px black;
+    transform:rotate(-7deg);
+}
+
+/* cartoon network button */
+a#btn_cn {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    box-shadow: 0px 2px 10px #888888;
+    transition: all .5s;
+}
+
+a#btn_cn #C {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+    padding: 0 12px;
+    background-color: black;
+    color: white;
+}
+
+a#btn_cn #N {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+    padding: 0 12px;
+    background-color: white;
+    color: black;
+}
+
+a#btn_cn:hover #C{
+    box-shadow: -7px 7px #f7c620;
+}
+
+a#btn_cn:hover #N{
+    box-shadow: 7px -7px #f7c620;
+}
+
+
+/* missouri bg button */
+a#btn_mbg {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    color: #447634;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+/* insta button */
+a#btn_insta {
+    display: block;
+    width: 105px;
+    height: 105px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 75px;
+    color: #fff;
+    background: linear-gradient(135deg, #4a55c9 0%,#db29ab 39%,#ea2c2c 68%,#ede65e 100%);
+    font-size: 76px;
+    transition: all .2s;
+}
+
+a#btn_insta:hover {
+    color: #eb34b3;
+    background: #fff;
+}
+
+/* lyft button */
+a#btn_lyft {
+    display: block;
+    margin: auto;
+    margin-top: 90px;
+    color: magenta;
+    text-align: center;
+    font-size: 50px;
+    transition: all .2s;
+}
+
+a#btn_lyft:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 50%;
+    top: 43px;
+    z-index: 1;
+    transition: all .5s;
+}
+
+a#btn_lyft:hover {
+    border: 5px solid black;
+    border-radius: 50px;
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000;
+    background-color: magenta;
+    color: #fff;
+}
+
+a#btn_lyft:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_lyft .fa-lyft {
+    position: relative;
+    z-index: 10;
+}
+
+/* pottermore button */
+a#btn_potter {
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a#btn_potter span {
+    display: block;
+}
+
+/* apple button */
+a#btn_apple {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: black;
+    color: lightgray;
+    font-size:  55px;;
+}
+
+a#btn_apple:hover {
+    padding-top: 0;
+    color: white;
+    font-size:  69px;
+}
+
+/* nike button */
+a#btn_nike {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 70px;
+    padding: 28px 5px 0 0px;
+    background-color: rgb(53 106 105);
+    color: #fff;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a#btn_nike:hover {
+    transform: rotate(360deg);
+}
+
+/* exploding kittens button */
+a#btn_kitten {
+    display: block;
+    position: relative;
+    margin-top: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a#btn_kitten span {
+    display: block;
+    width: 155px;
+    color: rgb(133, 14, 14);
+    margin: auto;
+}
+
+a#btn_kitten i:before {
+	display: block;
+	width: 0;
+	height: 0;
+	z-index: -1;
+    position: absolute;
+    left: 49.5%;
+    top: 65%;
+    font-size: 0px;
+    color: rgb(255, 173, 22);
+    transition: all .3s;
+}
+
+a#btn_kitten:hover i:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-size: 100px;
+    text-shadow: 0px 4px  rgb(255, 76, 44);
+}
