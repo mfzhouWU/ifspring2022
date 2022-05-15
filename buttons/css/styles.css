@@ -92,7 +92,8 @@ a#btn_mbg {
     position: relative;
     margin: auto;
     margin-top: 100px;
-    padding: 8px 16px;
+    padding: 10px 0;
+    width: 215px;
     color: #447634;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
@@ -100,6 +101,33 @@ a#btn_mbg {
     text-decoration: none;
     transition: all .2s;
 }
+
+a#btn_mbg i {
+    margin: 4px;
+    font-size: 23px;
+    color: white;
+ }
+
+ a#btn_mbg #seedlings-left {
+    position: absolute;
+    top: 42px;
+    left: 3px;
+ }
+ 
+ a#btn_mbg #seedlings-right {
+     position: absolute;
+     top: 42px;
+     right: 3px;
+ }
+
+a#btn_mbg:hover {
+    border: 3px solid #447634;
+}
+
+a#btn_mbg:hover i{
+    color: #447634;
+}
+
 
 /* insta button */
 a#btn_insta {
@@ -168,6 +196,14 @@ a#btn_lyft .fa-lyft {
 }
 
 /* pottermore button */
+@keyframes swing {
+    from { transform: rotate(-30deg); }
+    25% { transform: rotate(-20deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(20deg); }
+    to { transform: rotate(30deg); }
+}
+
 a#btn_potter {
     display: block;
     margin: auto;
@@ -180,6 +216,15 @@ a#btn_potter {
 
 a#btn_potter span {
     display: block;
+}
+
+a#btn_potter:hover i{
+    display: block;
+    transform-origin: center bottom; 
+    animation-name: swing;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
 }
 
 /* apple button */
